@@ -41,6 +41,14 @@
                 <input id="remember-me" name="remember-me" type="checkbox">
                 <label for="remember-me">Lembrar de mim</label>
             </div>
+            
+            <div style="margin-top: 15px; text-align: center; display: block;">
+                <a th:href="@{/registro}">Não possui uma conta? Registre-se</a>
+            </div>
+
+            <div class="alert alert-success" th:if="${param.registrado != null}" style="margin-top: 15px;">
+                Usuário registrado com sucesso! Faça login.
+            </div>
 
         </form>
     </div>
